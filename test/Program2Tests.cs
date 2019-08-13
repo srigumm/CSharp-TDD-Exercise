@@ -118,7 +118,7 @@ namespace test
             
             //Act,Assert
             var exception = Assert.Throws<Exception>(addDuplicateRequirement);
-            Assert.Equal("Can add only one instance of a particualr requriement type",exception.Message);
+            Assert.Equal("Can add only one instance of a particualr Requirements type",exception.Message);
         }
 
         [Fact]
@@ -167,7 +167,7 @@ namespace test
            
             //Act,Assert
             var exception =Assert.Throws<Exception>(removeRequirement);
-            Assert.Equal("Requriement doesn't exist",exception.Message);
+            Assert.Equal("Requirements doesn't exist",exception.Message);
         }
         #endregion
         #region "Provider Tests"
@@ -196,7 +196,7 @@ namespace test
             Action addDuplicateResource = ()=>provider.Add(new Resource(eResourceType.Hardware,10));
             //Act,Assert
             var exception = Assert.Throws<Exception>(addDuplicateResource);
-            Assert.Equal("Can add only one instance of a particualr resource type",exception.Message);
+            Assert.Equal("Can add only one instance of a particualr Resource type",exception.Message);
         }
 
         [Fact]
